@@ -1,0 +1,38 @@
+﻿namespace WpfKiosk.Support.Enums;
+
+public enum ImageType
+{
+    None,
+    AppStore,
+    Arsenal,
+    Benz,
+    Bmw,
+    Chelsea,
+    CrystalPalace,
+    Disney,
+    DisneyPlus,
+    Everton,
+    Honda,
+    Hyundai,
+    LeicesterCity,
+    ManchesterCity,
+    ManchesterUnited,
+    NewCastle,
+    Porsche,
+    Prime,
+    QQ,
+    SouthHampton,
+    Spotify,
+    Sunderland,
+    SwanseaCity,
+    Tesla,
+    Tinder,
+    Tottenham,
+    WestBromwitchAlbion,
+    USA,
+    KOR,
+    CHN,
+    JPN,
+    VNM,
+    ESP
+}
