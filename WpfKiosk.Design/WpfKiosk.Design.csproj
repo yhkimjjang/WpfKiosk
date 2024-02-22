@@ -8,6 +8,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Properties\Resources\geometries.yaml" />
+    <None Remove="Properties\Resources\images.yaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\geometries.yaml"/>
+    <EmbeddedResource Include="Properties\Resources\images.yaml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="YamlDotNet" Version="15.1.1" />
   </ItemGroup>

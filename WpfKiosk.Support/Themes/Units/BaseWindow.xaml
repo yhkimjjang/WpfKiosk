@@ -2,7 +2,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:units="clr-namespace:WpfKiosk.Support.UI.Units">
     <Style TargetType="{x:Type units:BaseWindow}">
-        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Background" Value="#F6F7F2"/>
         <Setter Property="BorderBrush" Value="#141414"/>
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="SnapsToDevicePixels" Value="True"/>
@@ -10,12 +10,40 @@
         <Setter Property="ResizeMode" Value="NoResize"/>
         <Setter Property="MaxWidth" Value="600"/>
         <Setter Property="MaxHeight" Value="600"/>
+        <Setter Property="WindowChrome.WindowChrome">
+            <Setter.Value>
+                <WindowChrome CaptionHeight="0"
+                              CornerRadius="0"
+                              GlassFrameThickness="0"
+                              NonClientFrameEdges="None"
+                              ResizeBorderThickness="5"
+                              UseAeroCaptionButtons="False"/>
+            </Setter.Value>
+        </Setter>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type units:BaseWindow}">
                     <Border Background="{TemplateBinding Background}"
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Border Grid.ColumnSpan="2"
+                                    Background="#222222"/>
+                            <units:CloseButton Grid.Column="1"/>
+                            <ContentPresenter
+                                Grid.Row="1"
+                                Grid.ColumnSpan="2"
+                                ContentTemplate="{TemplateBinding ContentTemplate}"
+                                ContentSource="Content"/>
+                        </Grid>
                     </Border>
                 </ControlTemplate>
             </Setter.Value>
