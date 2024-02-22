@@ -8,11 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\WpfKiosk.Design\WpfKiosk.Design.csproj" />
+    <ProjectReference Include="..\WpfKiosk.Support\WpfKiosk.Support.csproj" />
   </ItemGroup>
 
 </Project>

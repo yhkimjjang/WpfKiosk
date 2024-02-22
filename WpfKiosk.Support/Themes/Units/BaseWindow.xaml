@@ -37,7 +37,7 @@
                             </Grid.ColumnDefinitions>
                             <Border Grid.ColumnSpan="2"
                                     Background="#222222"/>
-                            <units:CloseButton Grid.Column="1"/>
+                            <units:CloseButton Grid.Column="1" CloseCommand="{Binding CloseWindowCommand}"/>
                             <ContentPresenter
                                 Grid.Row="1"
                                 Grid.ColumnSpan="2"
