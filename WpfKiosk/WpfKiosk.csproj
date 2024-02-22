@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\WpfKiosk.Forms\WpfKiosk.Forms.csproj" />
     <ProjectReference Include="..\WpfKiosk.Support\WpfKiosk.Support.csproj" />
   </ItemGroup>
 

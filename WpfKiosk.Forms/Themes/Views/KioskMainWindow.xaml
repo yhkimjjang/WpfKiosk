@@ -1,0 +1,15 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:base="clr-namespace:WpfKiosk.Support.UI.Units;assembly=WpfKiosk.Support"
+                    xmlns:views="clr-namespace:WpfKiosk.Forms.UI.Views">
+    <Style TargetType="{x:Type views:KioskMainWindow}"
+           BasedOn="{StaticResource {x:Type base:BaseWindow}}">
+        <Setter Property="Content">
+            <Setter.Value>
+                <TextBlock Text="Window Content"
+                           Foreground="#000000"
+                           Margin="10"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
