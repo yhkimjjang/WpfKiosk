@@ -1,19 +1,20 @@
 ﻿using Prism.Ioc;
-using Prism.Unity;
 using System.Windows;
+using WpfKiosk.Application;
 using WpfKiosk.Forms.UI.Views;
-using WpfKiosk.Support.UI.Units;
 
 namespace WpfKiosk;
 
-internal class App : PrismApplication
+internal class App : WpfKioskApplication
 {
     protected override Window CreateShell()
     {
         return new KioskMainWindow();
+        //return new BaseWindow();
     }
 
     protected override void RegisterTypes(IContainerRegistry containerRegistry)
     {
+
     }
 }

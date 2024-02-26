@@ -9,9 +9,4 @@ public class BaseWindow : Window
     {
         DefaultStyleKeyProperty.OverrideMetadata(typeof(BaseWindow), new FrameworkPropertyMetadata(typeof(BaseWindow)));
     }
-
-    public BaseWindow()
-    {
-        DataContext = new BaseWindowViewModel();
-    }
 }

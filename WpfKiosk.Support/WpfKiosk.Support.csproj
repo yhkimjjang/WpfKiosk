@@ -15,4 +15,8 @@
     <ProjectReference Include="..\WpfKiosk.Design\WpfKiosk.Design.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Local\Helpers\" />
+  </ItemGroup>
+
 </Project>

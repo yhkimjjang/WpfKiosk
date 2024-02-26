@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfKiosk.Support", "WpfKios
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfKiosk.Design", "WpfKiosk.Design\WpfKiosk.Design.csproj", "{0640F069-7CD3-4F22-98B1-39D299D74659}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfKiosk.Forms", "WpfKiosk.Forms\WpfKiosk.Forms.csproj", "{785DC6C2-EE18-4887-9DFD-EC7B5EAA3C9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfKiosk.Forms", "WpfKiosk.Forms\WpfKiosk.Forms.csproj", "{785DC6C2-EE18-4887-9DFD-EC7B5EAA3C9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfKiosk.MainMenu", "WpfKiosk.MainMenu\WpfKiosk.MainMenu.csproj", "{1B68950B-BE0D-4EEF-A8E1-8D3433ABD419}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{785DC6C2-EE18-4887-9DFD-EC7B5EAA3C9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{785DC6C2-EE18-4887-9DFD-EC7B5EAA3C9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{785DC6C2-EE18-4887-9DFD-EC7B5EAA3C9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B68950B-BE0D-4EEF-A8E1-8D3433ABD419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B68950B-BE0D-4EEF-A8E1-8D3433ABD419}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B68950B-BE0D-4EEF-A8E1-8D3433ABD419}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B68950B-BE0D-4EEF-A8E1-8D3433ABD419}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

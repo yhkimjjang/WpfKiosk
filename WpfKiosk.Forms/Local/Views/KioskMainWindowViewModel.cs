@@ -1,15 +1,20 @@
 ﻿using CommunityToolkit.Mvvm.Input;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 
-namespace WpfKiosk.Support.Local.ViewModels;
+namespace WpfKiosk.Forms.Local.Views;
 
-public class BaseWindowViewModel
+public class KioskMainWindowViewModel
 {
     // Close 이벤트 등록
     public ICommand CloseWindowCommand { get; init; }
 
-    public BaseWindowViewModel()
+    public KioskMainWindowViewModel()
     {
         CloseWindowCommand = new RelayCommand(CloseWindow);
     }
